@@ -9,6 +9,7 @@ public class particletype
     public int pz;
     public int ptype;
     public bool pstate;
+    public int page;
     //public Vector3 ppos;
         //ptypes 
         // 0 - nothing
@@ -17,13 +18,14 @@ public class particletype
         // 3 - fire
         // 4 - smoke
 
-    public particletype(int pid, int px, int pz, int ptype, bool pstate) //Vector3 ppos
+    public particletype(int pid, int px, int pz, int ptype, bool pstate, int page) //Vector3 ppos
     {
         this.pid = pid;
         this.px = px;
         this.pz = pz;
         this.ptype = ptype;
         this.pstate = pstate;
+        this.page = page;
         //this.ppos = ppos;
 
     }
@@ -34,6 +36,7 @@ public class particletype
         this.pz = pt.pz;
         this.ptype = pt.ptype;
         this.pstate = pt.pstate;
+        this.page = pt.page;
         //this.ppos = pt.ppos;
     }
 }
